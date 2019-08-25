@@ -7,21 +7,74 @@
   <div><input type="text" value="http://*.example.com/*" /></div>
   <div><p>Specify a URL rule (with wildcards permitted). Note HTTP vs HTTPS!</p></div>
   <div>
-    <div>
-		<input type="checkbox" name="sun">
-		<input type="checkbox" name="mon">
-		<input type="checkbox" name="tue">
+        <input type="checkbox" name="sun">
+        <input type="checkbox" name="mon">
+        <input type="checkbox" name="tue">
         <input type="checkbox" name="wed">
-		<input type="checkbox" name="thu">
-		<input type="checkbox" name="fri">
-		<input type="checkbox" name="sat">
-		<p>Sun Mon Tue Wed Thu Fri Sat</p>
-	</div>
+        <input type="checkbox" name="thu">
+        <input type="checkbox" name="fri">
+        <input type="checkbox" name="sat">
+        <p>Sun Mon Tue Wed Thu Fri Sat</p>
   </div>
   <div>
-	<button id="set">Set</button>
-	<button id="rm">Remove</button>
-	<button id="ls">List</button>
+  <select id="start">
+    <option value="0" selected>00</option>
+    <option value="1">01</option>
+    <option value="2">02</option>
+    <option value="3">03</option>
+    <option value="4">04</option>
+    <option value="5">05</option>
+    <option value="6">06</option>
+    <option value="7">07</option>
+    <option value="8">08</option>
+    <option value="9">09</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+  </select>
+  <select id="end">
+    <option value="0">00</option>
+    <option value="1">01</option>
+    <option value="2">02</option>
+    <option value="3">03</option>
+    <option value="4">04</option>
+    <option value="5">05</option>
+    <option value="6">06</option>
+    <option value="7">07</option>
+    <option value="8">08</option>
+    <option value="9">09</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23" selected>23</option>
+  </select>
+  <p>Start and End Hours (inclusive)</p>
+  </div>
+  <div>
+    <button id="set">Set</button>
+    <button id="rm">Remove</button>
+    <button id="ls">List</button>
   </div>
 </body>
 </html>
