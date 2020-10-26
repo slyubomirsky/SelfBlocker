@@ -31,6 +31,11 @@ $(function() {
     chrome.runtime.sendMessage(message);
   });
   
+  $("#warn").click(function() {
+    let message = {"flag": "warn", "key": "toggle"};
+    chrome.runtime.sendMessage(message);
+  });
+  
   $("#rm").click(function() {
     let url_rule = $("input").val();
     let message = {"flag": "rm", "key": url_rule};
@@ -51,7 +56,10 @@ $(function() {
         }
         msg += blocks.join(", ") + "\n";
       }
-      alert(msg);
+      chrome.storage.local.get("warn", function(item) {
+          msg += "Warnings active: " + item["warn"] + "\n";
+          alert(msg);
+      });
     });
   });
 });
